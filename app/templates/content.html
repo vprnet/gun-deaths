@@ -7,11 +7,9 @@
 <div class="container">
   <div class="row">
       <div class="col-md-12">
-        <div class="intro-text">
-          {% for entry in entries %}
-            <h1>{{ entry.Age }}</h1>
-          {% endfor %}
-        </div>
+        {% for entry in entries %}
+          <h5>{{ entry.Date }}: {{ entry.Age }}-year-old {{ entry.Sex }}, {{ entry.Manner }} by {{ entry.Specified }}</h5>
+        {% endfor %}
       </div>
   </div>
 </div>
